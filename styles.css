@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 10vh;
+    padding: 20px;
+    background-color: #eee;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+header {
+    background-image: url('./images/audi-volvo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.split-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#design, #safety, #advantages {
+    background-color: #eee;
+}
