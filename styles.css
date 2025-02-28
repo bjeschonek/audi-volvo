@@ -1,3 +1,4 @@
+/* Base Styles */
 :root {
     --audi-white: #fff;
     --audi-black: #000;
@@ -21,6 +22,40 @@ body {
     font-family: sans-serif;
 }
 
+/* Page Styling */
+
+/* Nav */
+.top-nav {
+    background-color: var(--gray-white);
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--audi-black);
+}
+
+.nav-links li a:hover {
+    color: var(--gray-dark);
+    text-decoration: underline;
+}
+
+/* Header */
 .home-header {
     background-image: url('./images/audi-volvo.jpg');
     background-size: cover;
@@ -35,37 +70,8 @@ body {
     align-items: center;
 }
 
-.home-nav {
-    background-color: var(--gray-white);
-    position: sticky;
-    top: 0;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page-links {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-.page-links li {
-    margin-right: 20px;
-}
-
-.page-links li a {
-    text-decoration: none;
-    color: var(--audi-black);
-}
-
-.page-links li a:hover {
-    color: var(--gray-dark);
-    text-decoration: underline;
-}
-
-#models-btn {
+/* Button */
+.standard-btn {
     margin-right: 30px;
     background-color: var(--audi-black);
     color: var(--audi-white);
@@ -75,22 +81,23 @@ body {
     transition-duration: 0.4s;
 }
 
-#models-btn:hover {
+.standard-btn:hover {
     cursor: pointer;
     background-color: var(--gray-dark);
 }
 
-.long-text {
+/* Content Sections */
+.text-section {
     margin: 20px auto;
     padding: 30px;
     width: 50vw;
 }
 
-.long-text p, .long-text ul, .long-text ol {
+.text-section p, .text-section ul, .text-section ol {
     margin-top: 20px;
 }
 
-.long-text h3 {
+.text-section h3 {
     margin-top: 20px;
 }
 
@@ -104,6 +111,7 @@ body {
     align-items: center;
 }
 
+/* Card Styling */
 .card {
     width: 300px;
     height: 250px;
@@ -115,6 +123,7 @@ body {
     padding: 20px;
 }
 
+/* Footer */
 footer {
     height: 10vh;
     background-color: var(--audi-black);
@@ -124,3 +133,5 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Media Queries for Mobile */
