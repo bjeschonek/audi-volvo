@@ -90,7 +90,7 @@ body {
 .text-section {
     margin: 20px auto;
     padding: 30px;
-    width: 50vw;
+    width: 60vw;
 }
 
 .text-section p, .text-section ul, .text-section ol {
@@ -113,14 +113,15 @@ body {
 
 /* Card Styling */
 .card {
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin-top: 20px;
     background-color: var(--gray-white);
     border: 2px solid var(--gray-black);
     border-radius: 5px;
     box-shadow: 5px 3px 3px var(--gray-dark);
     padding: 20px;
+    text-align: center;
 }
 
 /* Footer */
@@ -133,5 +134,49 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--audi-white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Add Slide Animation */
 
 /* Media Queries for Mobile */
