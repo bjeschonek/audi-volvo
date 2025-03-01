@@ -62,7 +62,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     padding: 30px;
     color: var(--audi-white);
     display: flex;
@@ -180,3 +180,36 @@ footer {
 /* Add Slide Animation */
 
 /* Media Queries for Mobile */
+
+@media screen and (max-width: 450px) {
+    .top-nav {
+        justify-content: flex-end;
+        position: relative;
+    }
+    .nav-links {
+        display: none;
+    }
+    .home-header {
+        padding: 0;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+    .text-section {
+        width: 100vw;
+    }
+    .split-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-header {
+        background-size: contain;
+        background-attachment: scroll;
+        padding: 0;
+        height: 50vh;
+    }
+    .text-section {
+        width: 80vw;
+    }
+}
