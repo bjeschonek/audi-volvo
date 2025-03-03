@@ -6,11 +6,15 @@
     <title>Audi vs Volvo - Model Comparison</title>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
 
     <nav class="top-nav">
+        <div class="logo">
+            <span id="audi">Audi</span> 
+            <span id="vs">vs.</span> 
+            <span id="volvo">Volvo</span>
+        </div>
         <ul class="nav-links">
             <li><a href="#xc40">XC40</a></li>
             <li><a href="#xc60">XC60</a></li>
@@ -20,146 +24,86 @@
         <a href="./index.html"><button class="standard-btn">Brand Comparison</button></a>
     </nav>
     
-    <h1>Model Comparisons</h1>
+    <header class="model-header">
+        <h1>Model Comparisons</h1>
+    </header>
 
     <section id="xc40" class="comparison">
-        <h2>Audi Q3 vs Volvo XC40</h2>
 
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="slide-number">1/10</div>
-                <img src="/images/xc40/xc40-exterior.avif" alt="XC40 exterior view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slid-number">2/10</div>
-                <img src="/images/xc40/xc40-front-close.avif" alt="XC40 front close up" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">3/10</div>
-                <img src="/images/xc40/xc40-front.avif" alt="XC40 front view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">4/10</div>
-                <img src="/images/xc40/xc40-rear-close.avif" alt="XC40 rear and tail light" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">5/10</div>
-                <img src="/images/xc40/xc40-side.avif" alt="XC40 side view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">6/10</div>
-                <img src="/images/xc40/xc40-wheel.avif" alt="XC40 wheels" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">7/10</div>
-                <img src="/images/xc40/xc40-infotainment.avif" alt="XC40 infotainment screen" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">8/10</div>
-                <img src="/images/xc40/xc40-seats.avif" alt="XC40 seats" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">9/10</div>
-                <img src="/images/xc40/xc40-speedo.avif" alt="XC40 speedometer and tachometer" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">10/10</div>
-                <img src="/images/xc40/xc40-trunk.avif" alt="XC40 trunk loaded with luggage." class="slide-img">
-            </div>
-            <a class="previous" onclick="changeSlides(-1)"></a>
-            <a class="next" onclick="changeSlides(1)"></a>
+        <div class="text-section">
+            <h2>Audi Q3 vs Volvo XC40</h2>
+            <p>The XC40 is Volvo's smallest SUV. It only comes in one engine option - the B5 MHEV which is a 4 cylinder turbo-charged motor that produces 247hp and 258 ft. lbs. of torque. The base price of this model is $41,945. It is available in 3 trim levels like the other models - Core, Plus, and Ultra. Unfortunately for Audi, Car and Driver ranks the XC40 #1 in its class, while the Audi Q3 is ranked 10th.</p>
+            <p>The XC40 beats the Q3 in a few areas. First, the XC40 is a MHEV, which helps to reduce emissions and makes the Volvo more efficient. The Q3 is not available with MHEV technology. Second, the XC40 has the option for the "climate package" which includes heated rear seats and a heated steering wheel which is available on all trims and only costs $550. No matter how much money you spend on a Q3, there is no chance you'll be able to get a heated steering wheel. The Volvo also comes standard with driver-side knee airbags. This is not available on the Q3. The Volvo comes standard with rear collision warning at low speeds. The Q3 also lacks this. From a safety perspective, the frontal crash rating for the Q3 is a 4, while the XC40 scores a 5. The advantage for the Q3 is that adaptive cruise control is standard, while it optional on the Volvo, and the Q3 does come standard with a pano roof, while the Volvo does not.</p>
+            <p>The Plus trim starts at $46,795 and the Ultra trim at $50,595. From a pricing perspective, the Volvo is very close in price to what you could get a Q3 for. The Volvo absolutely smokes the Q3 in performance. We already know that it has more horsepower than the Q3, and it's 0-60 time is 6.1s. The Q3 is said to do 7.1s on Audi's website, but Car and Driver tested it and was able to get 7.4s at the best. The only upside is that the Q3 takes regular 87 fuel, while the Volvo requires 91. Don't even give me the "yeah, but Quattro all wheel drive" line. Audi is known for using a Haldex AWD system in the Q3, which is exactly what Volvo uses...</p>
+            <p>Overall, I can't blame Audi for lacking behind the Volvo. The Q3 was redesigned in 2019 and has been the same ever since. It's time for a refresh which isn't even scheduled anywhere in the near future. Perhaps they were planning on phasing out the Q3 in favor of the Q4?</p>
+            <p>With all that being said, how do we sell the Q3 against the Volvo? Styling. The Q3 has a sharp appearance that the Volvo lacks. On the interior, again, the Q3 has significantly better style than the Volvo. The MMI is also easier to use, and Audi's Virtual Cockpit is always a plus.</p>
         </div>
 
         <div class="gallery">
-            <img src="images/q3/q3-exterior.avif" alt="Exterior view of Q3">
-            <img src="images/q3/q3-interior.avif" alt="Interior of Q3">
+            <a target="_blank" href="images/xc40/xc40-exterior.avif"><img src="images/xc40/xc40-exterior.avif" alt="XC40 exterior view" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-front-close.avif"><img src="images/xc40/xc40-front-close.avif" alt="XC40 front close up" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-front.avif"><img src="images/xc40/xc40-front.avif" alt="XC40 front view" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-rear-close.avif"><img src="images/xc40/xc40-rear-close.avif" alt="XC40 rear and tail light" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-side.avif"><img src="images/xc40/xc40-side.avif" alt="XC40 side view" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-wheel.avif"><img src="images/xc40/xc40-wheel.avif" alt="XC40 wheels" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-infotainment.avif"><img src="images/xc40/xc40-infotainment.avif" alt="XC40 infotainment screen" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-seats.avif"><img src="images/xc40/xc40-seats.avif" alt="XC40 seats" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-speedo.avif"><img src="images/xc40/xc40-speedo.avif" alt="XC40 speedometer and tachometer" class="slide-img"></a>
+            <a target="_blank" href="images/xc40/xc40-trunk.avif"><img src="images/xc40/xc40-trunk.avif" alt="XC40 trunk loaded with luggage." class="slide-img"></a>
+            <a target="_blank" href="images/q3/q3-exterior.avif"><img src="images/q3/q3-exterior.avif" alt="Exterior view of Q3"></a>
+            <a target="_blank" href="images/q3/q3-interior.avif"><img src="images/q3/q3-interior.avif" alt="Interior of Q3"></a>
         </div>
     </section>
 
-    <section id="xc60">
-        <h2>Audi Q5 vs Volvo XC60</h2>
-
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="slide-number">1/5</div>
-                <img src="/images/xc60/xc60-exterior.avif" alt="XC60 exterior view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slid-number">2/5</div>
-                <img src="/images/xc60/xc60-front.avif" alt="XC40 front view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">3/5</div>
-                <img src="/images/xc60/xc60-rear.avif" alt="XC60 rear view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">4/5</div>
-                <img src="/images/xc60/xc60-interior.avif" alt="XC60 interior design" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">5/5</div>
-                <img src="/images/xc60/xc60-interior2.avif" alt="XC60 interior details" class="slide-img">
-            </div>
-            <a class="previous" onclick="changeSlides(-1)"></a>
-            <a class="next" onclick="changeSlides(1)"></a>
+    <section id="xc60" class="comparison">
+        <div class="text-section">
+            <h2>Audi Q5 vs Volvo XC60</h2>
+            <p>After that last section, we might need a break as Audi has been taking a beating. But Volvo is no match for Audi's best-selling SUV. The XC60 can't handle the Q5. Hands down, I said it. If that triggers you, then "cash me ousside" and I'll put you in a Q5 so you can see for yourself. Anyway, the XC60 Core trim starts at $48,345 with the Plus coming in at $52,995 and the Ultra at $58,295. The XC60 is only available with the B5 motor, which is good news for Volvo salespeople because they really don't have to remember the details about 15 different engine options. But that's where the Q5 excels. There's the 40, the 45, the 45 Sportback, the SQ5, the 55PHEV, and the SQ5 sportback. There's so many Q5 models avaiable that it takes 20 minutes to explain the differences. The point is, the 45 outperforms the XC60. Volvo doesn't have any option that competes with the SQ5. The only real benefit Volvo gets is styling.</p>
+            <p>P.S. The XC60 ranks #5 on Car and Driver, while the Q5 ranks #8.</p>
         </div>
 
         <div class="gallery">
-            <img src="images/q5/q5-exterior.avif" alt="Exterior view of Q5">
-            <img src="images/q5/q5-interior.avif" alt="Interior view of Q5">
+            <a target="_blank" href="images/xc60/xc60-exterior.avif"><img src="images/xc60/xc60-exterior.avif" alt="XC60 exterior view" class="slide-img"></a>
+            <a target="_blank" href="images/xc60/xc60-front.avif"><img src="images/xc60/xc60-front.avif" alt="XC40 front view" class="slide-img"></a>
+            <a target="_blank" href="images/xc60/xc60-rear.avif"><img src="images/xc60/xc60-rear.avif" alt="XC60 rear view" class="slide-img"></a>
+            <a target="_blank" href="images/xc60/xc60-interior.avif"><img src="images/xc60/xc60-interior.avif" alt="XC60 interior design" class="slide-img"></a>
+            <a target="_blank" href="images/xc60/xc60-interior2.avif"><img src="images/xc60/xc60-interior2.avif" alt="XC60 interior details" class="slide-img"></a>
+            <a target="_blank" href="images/q5/q5-exterior.avif"><img src="images/q5/q5-exterior.avif" alt="Exterior view of Q5"></a>
+            <a target="_blank" href="images/q5/q5-interior.avif"><img src="images/q5/q5-interior.avif" alt="Interior view of Q5"></a>
         </div>
     </section>
 
-    <section id="xc90">
-        <h2>Audi Q7 vs Volvo XC90</h2>
-
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="slide-number">1/4</div>
-                <img src="/images/xc90/xc90-exterior.avif" alt="XC90 exterior view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slid-number">2/4</div>
-                <img src="/images/xc90/xc90-front.avif" alt="XC90 front view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">3/4</div>
-                <img src="/images/xc90/xc90-rear.avif" alt="XC90 rear view" class="slide-img">
-            </div>
-            <div class="slide">
-                <div class="slide-number">4/4</div>
-                <img src="/images/xc90/xc90-interior.avif" alt="XC90 interior styling" class="slide-img">
-            </div>
-            <a class="previous" onclick="changeSlides(-1)"></a>
-            <a class="next" onclick="changeSlides(1)"></a>
+    <section id="xc90" class="comparison">
+        <div class="text-section">
+            <h2>Audi Q7 vs Volvo XC90</h2>
+            <p>There is a new XC90 on the block. Redesigned and considered to be a 2025.5 model, this new XC90 features small changes to the exterior, and a new infotainment system inside the car. The XC90 is a formidable foe up against the Q7. The Q7 was just changed a bit for the 2025 model, but the interior has largely been the same since 2020. The XC90 is available in 2 variants - the B5 and B6, both MHEV platforms. It's really 4 if you count the PHEV and the BEV. The B5 is the same as the XC40 and XC60, plainly unimpressive in a large SUV. The B6 though, that's a little better. I'll get back to the engine specs in a bit. The big benefit for the Volvo compared to the Q7 is... captains chairs. The XC90 is available in both a 6 passenger, and 7 passenger configuration. The Q7 is not. The Q7 as we all know is available as a 45 and 55, but there is no option for the seating.</p>
+            <p>The XC90 maintains the same trim levels: Core starting at $59,745 the Plus at $63,845 and the Ultra at $68,245. These prices correspond to the B5 model, the B6 upgrade is $4,900 on the Core trim and $3,600 on the Plus and Ultra trims. For the engine stats, the B5 produces a 7.3s 0-60 time, but is highly efficient at 26mpg combined. The B6 produces 295hp and 310tq, with a 6.4s 0-60 time, which makes it a dog compared to the Q7 (45 is 6.7s and 55 is 5.5s).</p>
+            <p>But the Volvo comes out swinging with standard features. Afterrun climate is one, can't do that on a Q7. The standard air purifier is what gets me excited. It's an air purifier, it is capable of filtering PM2.5 and includes an air quality sensor that is available to view in their app, with which you can then purify the air in your car before getting in. 4 zone climate control is standard. A humidity sensor is standard (same in XC40/60). Wipers with integrated washer (A8 wipers) are standard. Orrefors crystal shift knob is standard. SPARE WHEEL is standard. Double locking - if you lock the car from the outside, then smash the window out, you cannot unlock the door from the inside. Does Audi have this feature?</p>
+            <p>BUT WAIT, THERE'S MORE! The new user interface is built on Android, just like our Q6, and you can display Google Maps on the driver screen. The Plus trim adds an integrated booster cushion for the center back seat. A built-in booster seat is wild. The Ultra provides the majority of all the things you'd get in the Prestige trim, so no use in highlighting those features.</p>
+            <p>So how does the Q7 compete? Styling. Fit and finish. Performance. Technology. We've come full circle back to Audi's brand advantages. The Q7 has options for adaptive air suspension, 4 wheel steering, soft close doors, remote park assist, and light animations. Don't even try to tell me that people don't like the interior styling in the Q7. Clean, simple, modern.</p>
         </div>
 
         <div class="gallery">
-            <img src="images/q7/q7-exterior-boat.avif" alt="Exterior view of Q7 towing boat">
-            <img src="images/q7/q7-interior.avif" alt="Interior view of the Q7">
+            <a target="_blank" href="images/xc90/xc90-exterior.avif"><img src="images/xc90/xc90-exterior.avif" alt="XC90 exterior view" class="slide-img"></a>
+            <a target="_blank" href="images/xc90/xc90-front.avif"><img src="images/xc90/xc90-front.avif" alt="XC90 front view" class="slide-img"></a>
+            <a target="_blank" href="images/xc90/xc90-rear.avif"><img src="images/xc90/xc90-rear.avif" alt="XC90 rear view" class="slide-img"></a>
+            <a target="_blank" href="images/xc90/xc90-interior.avif"><img src="images/xc90/xc90-interior.avif" alt="XC90 interior styling" class="slide-img"></a>
+            <a target="_blank" href="images/q7/q7-exterior-boat.avif"><img src="images/q7/q7-exterior-boat.avif" alt="Exterior view of Q7 towing boat"></a>
+            <a target="_blank" href="images/q7/q7-interior.avif"><img src="images/q7/q7-interior.avif" alt="Interior view of the Q7"></a>
         </div>
     </section>
 
     <section id="resources" class="text-section">
-        <h2>Helpful Resources</h2>
+        <h2 style="text-align: center; margin-bottom: 30px;">Helpful Resources</h2>
         <div class="split-content">
-            <div class="card">
-                <img src="" alt="">
-                <h3>Audi's Website</h3>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h3>Volvo's Website</h3>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h3>Audi Comparison Tool</h3>
-            </div>
+            <h3><a href="https://audiusa.com/en/" target="_blank">Audi's Website</a></h3>
+            <h3><a href="https://volvocars.com/us/" target="_blank">Volvo's Website</a></h3>
+            <h3><a href="https://carcomparison.audiusa.com" target="_blank">Audi Competitve Comparison Tool</a></h3>
         </div>
     </section>
 
     <footer>
-        <p>Copyright &copy 2025 Brad Jeschonek</p>
+        <p>Copyright &copy 2025 <a href="" target="_blank" style="color: white">Brad Jeschonek</a> | <a href="https://github.com/bjeschonek/audi-volvo" target="_blank" style="color:white">See Github repo.</a></p>
     </footer>
 
 </body>

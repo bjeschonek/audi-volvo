@@ -35,10 +35,29 @@ body {
     align-items: center;
 }
 
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#audi {
+    color: var(--audi-red);
+}
+
+#vs {
+    color: var(--gray-dark);
+}
+
+#volvo {
+    color: var(--audi-black);
+}
+
 .nav-links {
     list-style-type: none;
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 
 .nav-links li {
@@ -51,8 +70,9 @@ body {
 }
 
 .nav-links li a:hover {
-    color: var(--gray-dark);
-    text-decoration: underline;
+    color: var(--audi-red);
+    border-bottom: 2px solid var(--audi-red);
+    padding-bottom: 4px;
 }
 
 /* Header */
@@ -62,9 +82,17 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
-    padding: 30px;
+    height: 85vh;
     color: var(--audi-white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-title {
+    background-color: rgb(0, 0, 0, 0.25);
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,14 +119,21 @@ body {
     margin: 20px auto;
     padding: 30px;
     width: 60vw;
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .text-section p, .text-section ul, .text-section ol {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-section h2 {
+    margin-bottom: 30px;
 }
 
 .text-section h3 {
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #history ul li {
@@ -111,17 +146,30 @@ body {
     align-items: center;
 }
 
-/* Card Styling */
-.card {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    background-color: var(--gray-white);
-    border: 2px solid var(--gray-black);
-    border-radius: 5px;
-    box-shadow: 5px 3px 3px var(--gray-dark);
-    padding: 20px;
-    text-align: center;
+.model-header {
+    height: 20vh;
+    background-color: var(--audi-black);
+    color: var(--audi-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparison {
+    margin: 50px;
+}
+
+/* Gallery */
+.gallery {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 30vw;
+    height: auto;
 }
 
 /* Footer */
@@ -135,72 +183,7 @@ footer {
     align-items: center;
 }
 
-/* Slideshow Styles */
-.slideshow-container {
-    position: relative;
-    margin: auto;
-}
-
-.slide {
-    display: none;
-}
-
-.previous, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: var(--audi-white);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.previous:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slide-number {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Add Slide Animation */
-
 /* Media Queries for Mobile */
-
-@media screen and (max-width: 450px) {
-    .top-nav {
-        justify-content: flex-end;
-        position: relative;
-    }
-    .nav-links {
-        display: none;
-    }
-    .home-header {
-        padding: 0;
-        height: 30vh;
-        background-attachment: scroll;
-    }
-    .text-section {
-        width: 100vw;
-    }
-    .split-content {
-        flex-direction: column;
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .home-header {
@@ -211,5 +194,46 @@ footer {
     }
     .text-section {
         width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
+    .top-nav {
+        justify-content: space-between;
+        position: relative;
+    }
+    .nav-links {
+        display: none;
+    }
+    .home-header {
+        height: 30vh;
+    }
+    .header-title {
+        font-size: 12px;
+    }
+    .text-section {
+        width: 100vw;
+        font-size: 16px;
+    }
+    .split-content {
+        flex-direction: column;
+    }
+    .split-content a {
+        font-size: 15px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    .comparison {
+        margin: 0;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery img {
+        max-width: 80vw;
     }
 }
